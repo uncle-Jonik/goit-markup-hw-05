@@ -14,6 +14,8 @@
 
   --primary-font: 'Roboto', sans-serif;
   --logo-font: 'Raleway', sans-serif;
+
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -58,6 +60,7 @@ img {
 }
 input {
   padding: 0;
+  outline: transparent;
 }
 .list {
   list-style: none;
@@ -207,7 +210,7 @@ input {
   color: var(--slate);
   padding-top: 24px;
   padding-bottom: 24px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--animation);
 }
 .address-list-content:hover,
 .address-list-content:focus {
@@ -248,7 +251,7 @@ input {
   border: none;
   margin: 0 auto;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--animation);
 }
 .herro-button:hover,
 .herro-button:focus {
@@ -412,9 +415,10 @@ input {
 .footer-box {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .footer-logo-text {
-  margin-right: 120px;
+  /* margin-right: 120px; */
 }
 .footer-logo {
   margin-bottom: 16px;
@@ -428,7 +432,6 @@ input {
 .footer-social {
 }
 .footer-social-text {
-  font-weight: 500;
   color: var(--white);
   margin-bottom: 16px;
 }
@@ -459,6 +462,61 @@ input {
 .footer-social-link:focus {
   background-color: var(--green);
 }
+.footer-form-text {
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.subscribe-footer-form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.footer-form-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  color: var(--white);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.48px;
+
+  transition: border-color var(--animation);
+}
+.footer-form-input:focus {
+  border-color: var(--iris);
+}
+.footer-form-input::placeholder {
+  color: var(--white);
+}
+.footer-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  padding: 8px 24px;
+  min-width: 165px;
+  border-radius: 4px;
+  background: var(--iris);
+  cursor: pointer;
+  border: none;
+  color: var(--white);
+
+  transition: background-color var(--animation);
+}
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  background-color: var(--ocean);
+}
+.form-btn-icon {
+  fill: var(--white);
+}
 /* ==============================portfolio.html============================== */
 
 /* -------------------------------nav-section------------------------------- */
@@ -480,10 +538,8 @@ input {
 
   border-radius: 4px;
   border: 1px solid var(--cornflower);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--animation), background-color var(--animation),
+    border-color var(--animation), box-shadow var(--animation);
 }
 .product-nav-button:hover,
 .product-nav-button:focus {

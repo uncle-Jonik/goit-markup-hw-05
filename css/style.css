@@ -117,7 +117,7 @@ textarea {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.64;
+  letter-spacing: 0.04em;
 }
 
 .container {
@@ -726,6 +726,7 @@ textarea {
   height: 120px;
   width: 100%;
   border-radius: 4px;
+  color: var(--navy-blue-modal);
   border: 1px solid var(--navy-blue-modal);
   resize: none;
   padding: 8px 16px;
@@ -745,6 +746,7 @@ textarea {
   margin-bottom: 24px;
 }
 .modal-form-agreement {
+  color: var(--navy-blue);
   display: block;
 }
 .modal-checkbox {
@@ -752,6 +754,18 @@ textarea {
 .agreement-check {
 }
 .modal-form-descr {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--navy-blue-modal);
+  border-radius: 2px;
+  transition: background-color var(--animation);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-agreement {
+  fill: none;
 }
 .modal-form-link {
   color: var(--iris);

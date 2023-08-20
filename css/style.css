@@ -85,7 +85,7 @@ textarea {
 }
 .small-text {
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.48px;
 }
 .link-text {
@@ -686,7 +686,6 @@ textarea {
   margin-bottom: 16px;
 }
 .modal-form-label {
-  line-height: 1.17;
   display: block;
   margin-bottom: 4px;
   color: var(--light-slate);
@@ -720,7 +719,9 @@ textarea {
 .modal-form-input:focus + .modal-form-icon {
   fill: var(--iris);
 }
-
+.form-box-coment {
+  margin-bottom: 16px;
+}
 .modal-form-coment {
   height: 120px;
   width: 100%;
@@ -728,23 +729,25 @@ textarea {
   border: 1px solid var(--navy-blue-modal);
   resize: none;
   padding: 8px 16px;
-  margin-bottom: 16px;
+  background-color: transparent;
+  transition: border-color var(--animation);
 }
 .modal-form-coment::placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.48px;
   color: var(--navy-blue-modal);
-
-  transition: border-color var(--animation);
 }
 .modal-form-coment:focus {
   border-color: var(--iris);
 }
+.form-box-agreement {
+  margin-bottom: 24px;
+}
 .modal-form-agreement {
+  display: block;
 }
 .modal-checkbox {
-  margin-bottom: 24px;
 }
 .agreement-check {
 }
@@ -759,6 +762,7 @@ textarea {
   min-width: 169px;
   padding: 16px 32px;
   border: none;
+  cursor: pointer;
   color: var(--white);
   background-color: var(--iris);
   border-radius: 4px;

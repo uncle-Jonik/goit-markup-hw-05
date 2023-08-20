@@ -744,7 +744,7 @@ textarea {
   margin-bottom: 24px;
 }
 .modal-form-agreement {
-  color: var(--navy-blue);
+  color: var(--light-slate);
   display: block;
 }
 .modal-form-descr {

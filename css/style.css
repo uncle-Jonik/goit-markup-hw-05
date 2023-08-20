@@ -675,8 +675,6 @@ textarea {
   fill: currentColor;
   transition: fill var(--animation);
 }
-.modal-form {
-}
 .form-box {
   margin-bottom: 8px;
 }
@@ -749,10 +747,6 @@ textarea {
   color: var(--navy-blue);
   display: block;
 }
-.modal-checkbox {
-}
-.agreement-check {
-}
 .modal-form-descr {
   width: 16px;
   height: 16px;
@@ -763,9 +757,14 @@ textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition: background-color var(--animation), border var(--animation),
+    fill var(--animation);
+  fill: transparent;
 }
-.icon-agreement {
-  fill: none;
+.modal-checkbox:checked + .modal-form-agreement > .modal-form-descr {
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--cloud);
 }
 .modal-form-link {
   color: var(--iris);

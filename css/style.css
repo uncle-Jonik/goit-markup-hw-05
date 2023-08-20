@@ -473,6 +473,8 @@ textarea {
   align-items: center;
   gap: 24px;
 }
+.footer-form-label {
+}
 .footer-form-input {
   width: 264px;
   height: 40px;
@@ -485,7 +487,7 @@ textarea {
 
   color: var(--white);
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.48px;
 
   transition: border-color var(--animation);
@@ -500,7 +502,6 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
 
   padding: 8px 24px;
   min-width: 165px;
@@ -518,6 +519,7 @@ textarea {
 }
 .form-btn-icon {
   fill: var(--white);
+  margin-left: 16px;
 }
 /* ==============================portfolio.html============================== */
 
